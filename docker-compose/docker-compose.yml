@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  voidcrack.api:
+    image: ${DOCKER_REGISTRY-}voidcrackapi
+    build:
+      context: .
+      dockerfile: VoidCrack.Api/Dockerfile
